@@ -409,9 +409,9 @@ static int bcmbt_lpm_probe(struct platform_device *pdev)
 	int rc;
 
 	pdata = pdev->dev.platform_data;
-	bcm_bt_lpm_data.polarity = HOST_WAKE_ASSERT;
+	//bcm_bt_lpm_data.polarity = HOST_WAKE_ASSERT;
 	bcm_bt_lpm_data.state = ENABLE_LPM_TYPE_OOB_USER;
-	bcm_bt_lpm_data.timeout = DEFAULT_TO;
+	//bcm_bt_lpm_data.timeout = DEFAULT_TO;
 #ifdef BTLPM_LDISC_FREE_RESOURCES
 	/* store platform gpio assignement for ldisc use at open */
 	bcm_bt_lpm_data.gpio_bt_wake = pdata->gpio_bt_wake;
