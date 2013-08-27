@@ -166,10 +166,11 @@ static int bcmbt_tty_ioctl(struct tty_struct *tty, struct file *file,
 	case TIO_GET_BT_WAKE_STATE:
 		rc = bcm_get_bt_wake_state(arg);
 		break;
-
+#if 0
 	case TIO_SET_LPM_MODE:
 		pr_warn("bcmbt_tty_ioctl(TIO_SET_LPM_MODE):not implemented\n");
 		break;
+#endif
 
 #ifdef CONFIG_BCM_BT_GPS_SELFTEST
 	case TIO_GPS_SETLFTEST_CMD: {
